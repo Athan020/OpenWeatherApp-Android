@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.athandile.weather_app.WeatherDetailsActivity">
+
+
+    <!--<view android:background="#000"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--&gt;</view>-->
+
+
+    <TextView
+        android:id="@+id/weather_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/weather_in_cape_town_za"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/icon_for_weather"
+        app:layout_constraintStart_toStartOf="@+id/weather_location"
+        app:layout_constraintTop_toBottomOf="@+id/weather_location"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="22 C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weather_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toEndOf="@+id/weather_icon"
+        app:layout_constraintTop_toTopOf="@+id/weather_icon"
+        app:layout_constraintVertical_bias="0.567"
+        />
+
+    <TextView
+        android:id="@+id/forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Clear Sky"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/weather_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weather_icon"
+        app:layout_constraintTop_toBottomOf="@+id/weather_icon" />
+
+    <TextView
+        android:id="@+id/time_stamp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/forecast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forecast"
+        app:layout_constraintTop_toBottomOf="@+id/forecast" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="342dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_stamp" />
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView6"-->
+    <!--android:layout_width="93dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/wind"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/time_stamp"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/time_stamp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/wind"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="swosh"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView6"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.04"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView6"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView6" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView8"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:padding="4dp"-->
+    <!--android:text="@string/cloudness"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/wind"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView6"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView6" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/cloudness"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Bloof"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView8"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/wind"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView8"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView8" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView10"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/pressure"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/cloudness"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView8"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView8" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/pressure"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:text="Boom"-->
+    <!--android:padding="5dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView10"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/cloudness"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView10"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView10"-->
+    <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView12"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/humidity"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/pressure"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView10"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView10" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/humidity"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:text="Eish"-->
+    <!--android:padding="5dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView12"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/pressure"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView12"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView12" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView14"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/sunrise"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/humidity"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView12"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView12" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sunrise"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Up"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView14"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView14"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView14"-->
+    <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView16"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/sunset"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/sunrise"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView14"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView14" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sunset"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:background="@drawable/border"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Down"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView16"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/sunrise"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView16"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView16"-->
+    <!--app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView18"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="28dp"-->
+    <!--android:layout_marginBottom="158dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="@string/geocords"-->
+    <!--android:textSize="13sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/sunset"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/textView16"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView16" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/co_ords"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:background="@drawable/border1"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="TextView"-->
+    <!--android:textColor="@android:color/holo_orange_light"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/textView18"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/textView18"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/textView18" />-->

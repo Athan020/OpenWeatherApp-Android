@@ -1,0 +1,15 @@
+<resources>
+<string name="app_name">Open Weather</string>
+<string name="city_hint">Enter a City</string>
+<string name="city">City</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="geocords">Geocords</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="cloudness">Cloudness</string>
+    <string name="wind">Wind</string>
+    <string name="weather_in_cape_town_za">Weather in </string>
+    <string name="icon_for_weather">Icon For Weather</string>
+</resources>
